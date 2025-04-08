@@ -12,5 +12,74 @@
        
         <div class="flex items-center border-4 border-blue-500 rounded-full px-6 py-3 w-full space-x-4 text-2xl">                <img src="A5-Dev-Board-main/assets/logo.png" alt="">                       <span class="font-bold text-black">Dev Board</span>                                              <div class="flex-1"></div>                       <div class="flex items-center space-x-2">           <img src="A5-Dev-Board-main/assets/checkbox.png" alt="">           <span class="text-lg font-medium text-gray-700">23</span>         </div>                       <div class="w-9 h-9 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center justify-center">          <img src="A5-Dev-Board-main/assets/theme-btn.png" alt="">         </div>       </div>    
         <div class="flex items-center border-4 border-blue-500 rounded-xl w-full bg-white shadow-lg p-2 space-x-2"> <div class="flex items-center bg-gray-100 px-6 py-4 space-x-3 w-1/3 rounded-lg"> <img src="A5-Dev-Board-main/assets/checkbox.png" alt=""> <div> <p class="text-gray-500 text-sm">Task Assigned</p> <p class="text-3xl font-bold text-gray-900">05</p> </div> </div> <a href="blog.html" class="w-full max-w-md"> <div class="card w-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-xl border p-4 flex items-center text-white"> <img src="A5-Dev-Board-main/assets/board.png" alt="icon" class="w-10 h-10 mr-4"> <h2 class="text-lg font-bold">Discover Something New Today</h2> </div> </a> <div class="flex items-center bg-gray-100 px-6 py-4 space-x-3 w-1/3 rounded-lg"> <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center"> <img src="A5-Dev-Board-main/assets/calender.png" alt=""> </div> <div> <p class="text-gray-500 text-sm">Wed,</p> <p class="text-lg font-bold text-gray-900">Jul 23, 2025</p> </div> </div> </div>
+         <!-- Main Section -->
+      <div class="flex gap-6">
+        <!-- Task Cards Grid -->
+        <div class="grid grid-cols-3 gap-4 w-[1100px]">
+          <!-- Repeat this card 6 times -->
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">ShopEase</h2>
+            <p class="text-lg font-semibold">Fix Mobile Button Issue</p>
+            <p class="text-sm">Debug using Chrome DevTools, check for overlap…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">CloudSync</h2>
+            <p class="text-lg font-semibold">Add Dark Mode</p>
+            <p class="text-sm">Store the user’s preference in localStorage, update CSS var…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">SwiftPay</h2>
+            <p class="text-lg font-semibold">Optimize Home page</p>
+            <p class="text-sm">Debug using Chrome DevTools, check for overlap…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">Meta</h2>
+            <p class="text-lg font-semibold">Add new emoji 🥲</p>
+            <p class="text-sm">Debug using Chrome DevTools, check for overlap…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">Google LLC</h2>
+            <p class="text-lg font-semibold">Integrate OpenAI API</p>
+            <p class="text-sm">Debug using Chrome DevTools, check for overlap…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+
+          <div class="card bg-white shadow p-4 border border-blue-100">
+            <h2 class="font-bold text-blue-800">Glassdoor</h2>
+            <p class="text-lg font-semibold">Improve Job searching</p>
+            <p class="text-sm">Debug using Chrome DevTools, check for overlap…</p>
+            <p class="text-sm mt-1">Deadline: <span class="font-bold">21 March 2025</span></p>
+            <button class="btn btn-primary btn-sm mt-2 complete-btn">Completed</button>
+          </div>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="w-80 bg-white shadow rounded-lg p-4 h-fit">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-semibold">Activity Log</h3>
+            <button onclick="clearHistory()" class="btn btn-sm btn-outline btn-error">Clear History</button>
+          </div>
+          <div id="activityLog" class="text-sm space-y-1">
+            <p>You have Completed the Task Add Dark Mode at 12:45 PM</p>
+            <p>You have Completed the Task Add emoji at 12:45 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
 </body>
 </html>
